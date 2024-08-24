@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LoginWith_Invalidcredentials (failed)">
+    <parameter name="uid" value="hfdff@gmail.com"/>
+    <parameter name="pwd" value="hdehdhh@132"/>
+    <classes>
+      <class name="Testcases.LoginWith_Invalidcredentials">
+        <methods>
+          <include name="checkloginWithInvalidData" invocation-numbers="0"/>
+          <include name="closeApp"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- Testcases.LoginWith_Invalidcredentials -->
+    </classes>
+  </test> <!-- LoginWith_Invalidcredentials (failed) -->
+  <test thread-count="5" name="LoginWith_WithoutProvindingAnycredentials(failed)">
+    <parameter name="uid" value=""/>
+    <parameter name="pwd" value=""/>
+    <classes>
+      <class name="Testcases.LoginWith_WithoutProvindingAnycredentials">
+        <methods>
+          <include name="closeApp"/>
+          <include name="launchApp"/>
+          <include name="checkloginWithoutData" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Testcases.LoginWith_WithoutProvindingAnycredentials -->
+    </classes>
+  </test> <!-- LoginWith_WithoutProvindingAnycredentials(failed) -->
+</suite> <!-- Failed suite [suite] -->

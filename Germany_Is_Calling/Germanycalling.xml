@@ -1,0 +1,38 @@
+
+
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite  name = "suite">
+	
+	 <test name ="LoginWith_Validcredentials">
+	 <parameter name = "uid" value = "satishgude920@gmail.com" >  </parameter>
+		 <parameter name = "pwd" value = "Satish@123" >  </parameter>
+		 <classes>
+		 <class name ="Testcases.LoginWith_Validcredentials">    </class>
+		 
+	 </classes>	
+	 
+		
+			</test>
+  
+		<test name = "LoginWith_Invalidcredentials ">
+			<parameter name ="uid" value = "hfdff@gmail.com"></parameter>
+			<parameter name = "pwd" value ="hdehdhh@132"></parameter>
+			<classes>
+				<class name ="Testcases.LoginWith_Invalidcredentials"></class>
+			</classes>
+		
+		
+		</test>
+		
+		<test name = "LoginWith_WithoutProvindingAnycredentials">
+			<parameter name ="uid" value ="">   </parameter>
+			<parameter name ="pwd" value ="">   </parameter>
+			<classes>
+				<class name = "Testcases.LoginWith_WithoutProvindingAnycredentials"></class>
+			</classes>
+			
+		</test>
+		
+		
+	</suite>
